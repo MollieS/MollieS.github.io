@@ -1,0 +1,11 @@
+---
+layout: post
+title: Day twenty
+date: 2016-04-29 18:40:30 +1000
+---
+
+I haven't been an apprentice long, and I know that I've got a long way still to go, but sometimes it's hard not to wonder what will happen when it ends.  Today I watched a fellow apprentice become a craftswoman.  It was nerve-wracking and exciting and felt like I was witnessing something really special.  I know that to get to that point there is an enormous amount of work involved, although I feel that I have barely scratched the suface of what I'm going to learn to get there, but seeing someone make it to the end of the apprenticeship and begin as a craftswoman, was inspiring.
+
+Saying that, however, since I started I have been very conscious of the fact that I should not think about the end.  Each week I start a new iteration.  Within that iteration are the stories I have to complete and the things I have to learn.  This is my focus.  Anything outside of that iteration is just a distraction.  I have to work to learn all the things that I want to learn, to do everything I need to do, and that's that.  This is liberating but also difficult.  I know where I want to get.  I want to become a software craftswoman, I want to know all of the things I need to know, and I want to know them all now.  Narrowing my focus is beneficial in that it is impossible for me to consume all of that knowledge right now, and I have to practice all of the things I have learnt.  The level of knowledge and understanding needed to become a crafter, now, to me, seems impossible to achieve.  Looking at the big picture, at the abilities of the crafters I see, is scary because that leap seems so big it's almost paralysing.  
+
+I understand that I will never know everything, but to know as much as they do can seem so daunting.  So I can't focus on it.  Right now, it is aspirational and it is inspiring to be surrounded by people with such a vast wealth of knowledge.  But for me, now, I'm just going to keep learning Java.  I'm going to keep reading about the SOLID principles.  I'm going to practice the red, green, refactor loop.  I can't accumulate all the things I want to know right now, the leap is too big.  So I take small steps, keep my focus on each step, so that one day, I hope, I'll look up and I'll know a thousand times more than I know right now.

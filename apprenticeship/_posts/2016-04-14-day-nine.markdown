@@ -1,0 +1,28 @@
+---
+layout: post
+title: Day nine
+date: 2016-04-14 17:30:40 +1000
+---
+
+Yesterday morning I really wasn't sure if I was going to manage to complete my stories for the week.  It had taken me so much time to get my setup working, and I spent so much time getting ready for my kata performance I was starting to worry that I would be working all weekend.  This afternoon I'm feeling a whole lot better about the situation.  I'll say it again:  Estimating is hard.
+
+I started my Echo programme yesterday, and since I'd had some practice in getting my environment ready for using vim for my Java, that took much less time than I thought it might.  I was apprehensive about the testing, but I spent a good amount of time yesterday trying to get my head around input/output streams and how to manipulate them, and when it came to the tests, with a litte help from SO, I understood what I was doing and felt pretty happy with how it went, although now I feel I may have not done it in the best way, so I will probably change it tomorrow and create a console on which I can test.
+
+But this is what I've got so far.  I want to write a blog post about it because I think I understand it, but explaining it in writing always helps confirm whether I do actually understand. So here goes...
+
+To test the output, I used a ByteArrayOutput stream, which is simply an output stream where data is written in as bytes, which would record what was outputted so that I could retrieve it to test.
+```
+ByteArrayOutputStream outContent == new ByteArrayOutputStream();
+```
+
+Then I set up the stream by changing the standard output stream to a PrintStream, an extension of OutputStream with the ability to print data, with the ByteArrayOutputStream as an argument, so that any data printed in my new stream would be recorded.
+
+```
+System.setOut(new PrintStream(outContent));
+```
+
+Then I simply called the method that I was expecting to print a string, turned the ByteArrayOutputStream into a string and asserted that it contained the string I was expecting.
+
+The only real difference between this test and the test for receiving input was the addition of ```System.setIn()``` which alters the input stream.  I injected ```ByteArrayInputStream("Hello".getBytes())``` so I had some input to return, and then recorded the output stream in the same way as the previous test, checking the output stream contained the data from the input stream.
+
+And that's pretty much it.  It makes sense, but I feel that if I was to complicate my programme, maybe adding a loop for example, this would make it much harder to test, and even as it is, I don't know how secure my tests are or whether I should actually be manipulating the standard output and inputs.  So I will try a different way, and learn some more.

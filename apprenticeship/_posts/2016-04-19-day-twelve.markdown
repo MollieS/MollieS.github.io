@@ -1,0 +1,14 @@
+---
+layout: post
+title: Day twelve
+date: 2016-04-19 16:40:30 +1000
+---
+
+Most of my day was taken up with Rock Paper Scissors.  I was feeling good about my process.  I stared with my focus on the Game class, and felt like it had too much responsibility.  I had the methods for greeting and getting input in there as well as the game logic, so I took all the methods that dealt with interacting with the user and moved them to an App class.  I'm not sure about the name, but felt much happier with them outside the Game class.  I was a little unsure of how I was wanted the algorithm to look, so I took Kent Beck's advice and triangulated my code, only refactoring when I had tests requiring me to do so and when my duplication looked exactly the same.  This was really helpful and so far I'm pretty happy with how my Game class is looking. 
+
+When I moved back to the App class, which should be communicating wins and losses to the user, I had one thing in mind:  any additions I made to the App class should not affect the Game class.  I'm happy with the Game class, I should not need to change anything, and the App class should not affect how the game works, so hopefully, I'll be able to stick to this aim.
+
+Originally, in the back of my mind, I was thinking that the App class and the Game class would both be injected into my Console class, which would deal with their interaction, but now that I've got my Game class and the basis of my App class, I don't think this makes sense.  I should be able to inject the Game class into the App class and then inject that to the Console.  I can't workout, however, whether this is too complicated.  It seems like this chain of dependency is a bit long.  The Console relying on the App which needs the Game, but right now I can't think of a better way to do it, because it does make sense to me. 
+
+When moving to a new feature I always have to stop and think whether this is the best way to proceed, and I can find myself hesitating, but I shouldn't.  If I add a new feature and I find that I'm having to change lots of things and use lots of doubles, then I have a clue that my design needs improving.  So tomorrow I'm just going to carry on and see what happens.  At the moment I feel like I have so much new information in my head and I am trying to apply it all to my code and it's making me nervous.  I think I understand what I've learnt, and I have understood my feedback, so I want to get it all right.  It's fine to want to get it right, but not so far that I'm afraid of getting it wrong.  I make mistakes all the time, and I'm in an environment where that's ok, because every mistake I make I can learn from.  I have a very fast feedback loop so that I can learn and improve all the time.  That's the point.  I think.  So I'm just going to keep going whilst it still make sense, and if it stops making sense and starts getting really hard to add to or to test, I'll reconsider.
+

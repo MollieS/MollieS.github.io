@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "The first day"
+date:   2016-04-04 17:31:50 +0100
+---
+
+I've been coding for just over a year now and there are a few things that have really characterised my experience so far. One of those is the knowledge that I know very little.  The more I learn, the more I see how much there is to learn.  The more people I meet, the more I realise how many people there are who know so much more than me.  It's been a year, so I'm getting used to this feeling, and am trying to be more comfortable with it, but, of course, sometimes it can feel like a struggle.  I don't doubt that I can learn the things that I want to, or my desire to do so, but every once in a while I doubt my ability, which I feel will be inevitable throughout my career.
+
+I thought today, my first day as a traniee software craftsman, that these feelings might come to the fore.  I was shown the apprentice checklist, a list of all the things I will be expected to be able to do, and asked to rate my confidence in each area, and each point got rather a low number.  What surpised me, though, was that did not make me feel as I thought it would.  In fact, honestly stating where I thought I was with my abilities, was a complete relief.  Being in an environment where I could  hold my hands up and say "I don't think I'm very good at this", "I don't feel confident in this area" or "I have no idea what that even means" was so refreshing.
+
+My expectations for the day were thus exceeded, because I realised that I had managed to get a position in a company that are willing to teach me the things I do not know.  I am surrounded by people with a combined vast amount of knowledge and experience, and they want to share that with me.  I get to wake up every morning and learn how to do what I want to do: write really good code. Not only that, everyone at 8th Light has been constantly kind and supportive.  8th Light have created an environment where honesty in what I perceive to be my shortcomings is encouraged, because I know that it will help me learn, and help me be taught.
+
+The day itself presented me with a whole host of new things to learn.  It began with Zagaku, a concept I've never heard of but I learnt means learning sitting down.  After that I began reading TDD by Example, a concept that, thankfully, I am famaliar with, but with examples entirely in Java.  I'm sure I'll get to grips with those soon...
+
+Then there was lunch with two of my mentors, who both made me feel so welcome, as had everyone in the office.  Then my very first IPM which, I have learnt, stands for Iteration Planning Meeting.  Here I was given a list of tasks and I had to estimate how long they would take, yet another skill I'm going to have to learn.  Then I was off, with the help of my mentors and with offers of help from everyone in the vicinity, to complete my tasks.
+
+I feel there's a recurring theme in this blog post and it is this:  I don't know very much right now, and that's ok.  I am here to learn, and I will learn everything I can.  So I am keeping my apprentice checklist, low numbers at all, because I know with 8th Light's help and my hard work, it won't be long until those numbers grow.

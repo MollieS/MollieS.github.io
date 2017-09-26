@@ -1,0 +1,13 @@
+---
+layout: post
+title: Day seven
+date: 2016-04-12 18:30:50 +1000
+---
+
+I felt like I was on a bit of an adventure today, setting off into the unknown.  Using what I learnt yesterday about JUnit set up in the command line, and appying it to a kata, as well as using tmux and really getting to know my vim.  It seemed like a challenge, but of the good kind.  I knew I was going to learn a whole lot, and I did.
+
+For the most part, it went well.  I was running tests by lunchtime and felt like I was making progress. The afternoon was slower.  I was working through the Roman Numerals Kata and, although I could solve it, I wasn't comfortable with any of the solutions I was coming up with.  None of them felt right.  I learnt a lot about Java data structures and the methods they use trying to implement different ones in trying to clean up my code, but a lot of them felt a little too complicated for what I was really trying to achieve.  This may be just because I don't know Java well enough yet.  Maybe what I was doing was not that complicated, it just felt complicated to me.  What I was aware of, however, was that to get comfortable with these new data structures is going to take me time and, although it's only Tuesday evening, this is time I'm not sure I have to spare.  I'm going to be performing a kata on Thursday, and if I am not comfortable with it, then it's not going to be a particulaly inspiring performance.  Plus I want to start getting on with my echo programme, because I can forsee that taking a while.
+
+So I'm hoping to change the kata to Fizzbuzz, something I am a little more comfortable with, to ensure I can be ready to perform and have time for my echo programme.  I don't know, maybe I underestimated my stories this week.  Maybe I should have been more pessimistic.  Setup and getting comfotable with a new set up always takes longer than I think.  But now I'm hoping to manage my stories so that I can deliver this week, and if a little change can help, then I'm happy with that.  I have to be realistic with what I can deliver.  I'm sure I'll be able to go back to Roman Numerals when I know Java better, and hopefully then I'll find a solution that feels right.
+
+Estimating is hard.

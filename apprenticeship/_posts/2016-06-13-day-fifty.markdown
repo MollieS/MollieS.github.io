@@ -1,0 +1,25 @@
+---
+layout: post
+title: Day fifty
+date: 2016-06-13 16:40:00 +1000
+---
+
+After I had decided that I wanted to focus on learning more about the computer science side of programming, one of my mentors sent me a link to this [Matt Might post](http://matt.might.net/articles/what-cs-majors-should-know/).  When you want to start learning something new, there's something so reassuring about having some kind of checklist to gauge yourself against.  The thing about that post is it's long and I don't know any of it.  I skimmed it to begin with, just trying to get an idea of what it was about.  Then I skimmed it again to see whether I knew anything on the list confidently (resounding no) and then I read it.  When faced with such a big list of things you don't know but feel like maybe you should and you really want to, it can be a little paralysing.  Where do you start?  Will you ever finish it?  Are you actually capable of learning any of it?  I thought narrowing my focus would make it easier, but of course saying "I want to learn about computer science" just opens up a whole new realm of possibilities.
+
+But, the reason I narrowed my focus to cs was just that, so I could focus.  I thought about the things that I don't know, and identified one area where I wanted to know more.  This list is the same.  It's divided into categories, so I can easily take it in parts rather than feel overwhelmend by the whole.  I already knew I wanted to do the nand2tetris course, and it's recommended on the list, so I feel like that's a good place to start.  I have a guide, and I can use it as I want.  It took me a little while to get over the initial shock of having all the things I don't know laid so starkly infront of me, but all I really needed to do, once again, was divide it into parts and take one element at a time.
+
+So the paralysis faded, the excitement came back and I'm once again feeling really good about all the fun things I'm going to learn.  The question is now, how do I find the time?
+
+A while ago I commited again to blogging every day, and I haven't really kept up that commitment.  I've been trying to do more in depth blog posts and, combining that with pairing every day, I've found it hard to carve some time out to blog, let alone research how computers work.  I know it's going to be hard to blog every day this week, I've got a workshop tomorrow and a meetup on wednesday, but I'm really going to try.  I want to become more disciplined, I want to honor my commitments more thoroughly, I want to spend as much time as I can find learning and improving.  Yes, it is important to find time to relax, but the thing is, I really like blogging.  I am learning so much, so fast, and I need to write it down, I need to cement it, I need to talk about it, and this blog gives me the space to do this.  It's also really good to practice my writing, my typing and my vimming.  What's not to love?
+
+I went through a phase of thinking these kinds of posts weren't that worthwhile, but I've got over that.  Although they may not be the most exhilirating read, and they may not be packed full of information, they offer me a place to just write.  I get to think outloud, record my day and create something.
+
+I guess one of the things I worried about when writing this kind of post was that they don't make me look very clever.  If I write a post about something super cool I've learnt or something fun I did, that feels great.  If I write a post like this, it may not represent how my brain was working or how much I learnt or how I pushed myself to do something I didn't think I could do.  But what does that matter?  
+
+Writing a post like this gives me time to reflect on me, how I'm feeling and what I'm feeling.  I'm not just training to be the best coder I can be, that's not what makes a great developer.  The code is important, but there is much more to it than that.  People are what makes great software.  People are what makes great teams.  Reflecting on myself and how I feel, I think, will make me more empathetic.  If I can identify what makes me do what I do, then I will be more capable of identifying that in others.  If I can be mindful of my own fears, concerns and thoughts, then I will be able to recognise them and reassure myself, which will, in turn, help me to recognise and reassure them in others.
+
+So here are my goals for the week:
+
+- Blog every day.
+- Take time to reflect on not just what I've learnt, but also what's going on in my head.
+- Be a great pair.

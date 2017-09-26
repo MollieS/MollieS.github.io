@@ -1,0 +1,29 @@
+---
+layout: post
+title: Day six
+date: 2016-04-11 18:30:40 +1000
+---
+
+Monday means my IPM.  I was pleased that I had completed all my stories from last week, apart from the ongoing ones, and felt ready to discuss my next set with my mentors when my IPM this afternoon came around.  In the IPM I had to demo the completed stories from the week before, which I was not prepared for, but I think I'll get used to it.  Next week I'll spend a little more time planning how I will demo them, which should help.
+
+The result of my IPM was two main tasks this week.  First, perform a Java Kata.  Second, write an Echo Program.  That doesn't sound to bad, does it?  Well, I've got to do it in raw vim.  No IDE, no easy classpath options, no handy testrunner window.  Just Java, JUnit, vim, shell script and me.  It's going to be a learning experience, that's all I can say so far.
+
+After my IPM I decided that I would give myself one task for the rest of the afternoon.  I would try to run a JUnit test from the command line.  I downloaded JUnit, made a new project, wrote a test, set my classpath, complied the file and ran the JUnit testrunner.  It ran!  It passed!  True is equal to true!
+
+Oh how I wish it had been that simple.  IntelliJ, in the short week that I used it, has spoiled me.  Downloading JUnit was fine.  Making a project was simple.  I wrote a test, an easy test, just to get things running. I set my classpath.  This is where things began to slow down.  I wanted to make sure that I understood what I was doing and why, and I think I do.  So I set the classpath. I ran the JUnit testrunner.  I saw errors.
+
+My first error: `org.junit.Core not found`.  What?  What does this mean?  You can't find the junit.jar file? Or have I got the wrong .jar file and junit.Core isn't in it? It must be something wrong with my classpath.  I tried again.  Same error.  Google time.
+
+In general, I've learnt that 20 minuites without changing the error is the best time to ask for help.  I know that I learn better by investigating a problem and trying to fix it myself than being told how to fix it.  I remember it that way.  So I found some help on Stack Overflow, tried a few things, changed my classpath a few more times and still got the same error.  I went back to the error. `org.junit.Core not found`.  Maybe it wasn't my classpath?  I opened the junit.jar file.  It was empty.  How had I downloaded an empty .jar file?  I don't know, but I had managed it, the error was telling me what was wrong and I had misinterpreted it.  It happens.
+
+A new, full, .jar file in place, I set tried again.  A test!  It ran!  It failed!  I had a lovely line on my console saying `FAILURES!!`.  Thanks JUnit.  But I'm asserting that true equals true.  How can than fail?  Back to error message. `JunitTest not found`.  Another problem with my classpath?  I could not see how that was the problem, by this time I had my classpath locked down.  Deep breath, Mollie, this isn't that hard.  I'm just trying to run a test. But wait!  It's java!  I have to compile!
+
+File compliled, I ran again.  Surely this time i'll have a running test.  What else could happen? `hamcrest not found`.
+
+Huh? What? Oh.  All the instuctions and questions I had seen were relating to JUnit 4.11,  I'm using 4.12.  A quick search tells me I need hamcrest.jar in my classpath too.  Easy.  By this point I am a master at setting classpaths (please don't quote me on that, I am almost certain I will go through almost the exact same steps when setting up a new project).  It's done.  I run the test with bated breath, hoping for fireworks and my whole screen to be green.  This does not happen, but I have just a few lines in my console.  It ran.  It passed.  I've done it.  I have a passing test.  Sure, I'm not testing anything, but that'll happen tomorrow.  I hope.
+
+With my success in hand, I went on to shell scripting my test so that I could run it with a simpler command.  I broke everything in the process, obviously, but I understood why it was breaking and how to fix it, so, after a little bit of frustration, I always find environment set up a little frustrating, I finished feeling pretty good about the day, and ready for writing some well tested code tomorrow.
+
+We'll see how it goes...
+
+

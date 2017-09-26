@@ -1,0 +1,21 @@
+---
+layout: post
+title: Day four
+date: 2016-04-07 19:50:30 +1000
+---
+
+Well.  What a day.  I would say that I have done the Prime Factors kata so many times that I know if off by heart, but I don't.  I would like to, but I don't, which I believe is part of the reason I'm not doing it all that fast.  Today was a real challenge.  I was having a lot of fun to begin with, doing the kata over and over again and feeling that each time it was getting faster, but after a while I got to the point where I really didn't want to do it again, and then I did it a few more times, began to feel a mild resentment towards prime numbers in general, did it a couple more times and then realised that not only was I not getting any faster, I was getting slower.
+
+I was focusing on getting faster when, really, I think I should have been examining what was slowing me down.  If Einstein could have seen me, I'm pretty sure he would have deemed me insane.  Yes, doing the kata over and over was going to make me remember it better so that I wouldn't have to think about the code, but did I have all the shortcuts I needed?  Was I using the best vim commands? Were my essential keymaps logical and in easy reach?
+
+So far, that's been the best part of this exercise.  I realise I've never given much thought to my text editor.  I started using vim because it was a new thing to learn, and everyone I saw using it could do everything very fast, but I learnt the basic commands, enough to get me around and used a few plugins, and that was it.  I never had to consider how to optimise it for me, which is crazy because vim is all about the endless customization possibilities and how to make it work for you.  My IntelliJ this evening has, I think, all the keymappings and shortcuts I need to make me work faster.  I know what they do, I remember what they are and I'm using them regulaly.
+
+Because I'm using the vim plugin, I've found that I'm using far more commands than I usually would, and am actively looking up those that I wish I had, because I know vim has them, I just don't know them yet.  I am still quite slow, but a few more goes at Prime Factors and I'm hoping my fingers will remember them all.
+
+So, what else is slowing me down?  My typing.  I never learnt how to touch type properly, but I do have some general way of typing that works fine most of the time.  I do not, however, have much confidence in my technique.  I did try to learn real touch typing before starting my apprenticeship, but old habits die hard.  When it comes to typing as fast as I can, I just type how I know how and hope for the best.  This, I'm coming to realise, isn't really good enough.  Because I don't know exactly where the keys are, I do look at my hands and I make more errors than is efficient.
+
+Finally, and a little painful to admit, I do not yet know the kata well enough.  I hesitate.  I should not need to think about what comes next and the only way to fix this is to keep practicing, which is the theme of the day.
+
+I suppose the conclusion of this post is that, so far, I've been getting by.  This isn't good enough.  It's not good enough for 8th Light and it's not good enough for me.  I have so many tools available to me that I haven't been utilising.  I want to be the best I can be, and right now I've got some things to work on, so that's what I'm going to do.
+
+You'll be pleased to hear that I did touch type this post.  It took me longer than it usually would, but I know that time spent now will save me time later and maybe, one day, I'll be doing the Prime Factors kata in five minuites.

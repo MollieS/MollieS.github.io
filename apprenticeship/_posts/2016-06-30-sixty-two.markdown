@@ -1,0 +1,72 @@
+---
+layout: post
+title: Day sixty-two
+date: 2016-06-30 16:40:00 +1000
+---
+
+Getting Started With Play
+-----------
+
+I struggled with Play throughout the LunchMan project, but this was mainly, I'm sure, because I didn't really understand it.  The main reason that I found it hard to work with was that I did not get on with the documentation.  So many times we felt like we'd found the answer to a question, only to discover it was really out of date.  A lack of documentation, though, does not mean it is a bad framework, and I would like to get to know it enough to make a decision on whether I like it or not.
+
+I learnt a lot about Play during LunchMan, and I wanted to cement that knowledge by writing about it.  I also wanted to practice using Play on my own to ensure that I really understood all the things that Nick and I did together.  So I'm going to structure a few blog posts about play in the format of a tutorial so that if I forget how to do something I've already done, I will have an explanation of how to do it.  I'm going to start really simply, because when I first used play, just trying to get to a point where I could start adding content took me about double the time I thought it would.  
+
+
+### Setup
+--------
+
+First off you'll need [activator](https://www.playframework.com/download).  Activator is a built tool that uses SBT and adds a few features of its own: namely its ui and the `activator new` command that will set up a play project for you.  Once activator is downloaded, add it to your path.  It is recommended that, because activator writes files for you, that you unzip it somewhere that you are certain you have write access for.
+
+Secondly you need to configure your IDE. Since Play is built in Scala with SBT, you need to download both plugins for IntelliJ in order to be able to use Play.  IntelliJ CE, unlike IntelliJ ultimate, does not completley support the Play framework, but for the most part it can be used.
+
+And that's everything needed to start working with Play!
+
+Creating a new project can be done one of two ways; either on the command line or using the activator GUI.  I prefer the command line, so that's what I'm going to do and, because this is a blog post about Play set up, I'm going to do HelloWorld.
+
+To create the project, all that needs to be done is typing `activator new HelloWorld`
+Activator will provide a few options for templates to choose from, and I'm going to choose `play-java`.  This seems to be the simplest template activator offers.
+
+### What is all this stuff?
+-------
+
+Activator has now created our app and the folder in which it is contained. Within that directory `activator run` serves the app on localhost:9000.
+
+Activator does not just create an empty project for you.  It creates a maze of play information.  This is not really what we want, but to find out where it's coming from, we're going to have to navigate through the files activator has created for us.
+
+The file structure of the new app is quite large, but the majority of the files are related to the framework itself which we will not concern ourselves with.  In reality, we only care about 3 directories at the moment: app, conf and test.
+
+So, first we need to work out where all that play documentation is coming from and get rid of it.
+
+Let's start with the conf directory. If we open conf/routes we can see what happens when we make a get request to localhost:9000/
+
+Within the routes file we have this line:
+
+```GET     /                           controllers.HomeController.index```
+
+This is telling play that when a get request to / is made, the HomeController should execute its index method.  So if we look at that next, then maybe we can work out where the play documentation is coming from.
+
+In the HomeController (app/controllers/HomeController) we find the index method, which looks like this:
+
+```
+public Result index() {
+  return ok(index.render("Your new application is ready."));
+}
+```
+
+IntelliJ CE may, or may not, highlight the index variable as it cannot recognise it. That's ok, the tests should still run, and it should still compile, but this method doesn't really tell us all that much.  Just like IntelliJ, we may be unclear on the origin of the index variable. What we do know is that we are calling a method that returns a Result object.
+
+What is actually happening in this method is that we a returning a 200 OK response and the HTML to be rendered on the page.  `ok()` is the method that returns the response and `index.render()` is the method that will render the HTML to be displayed.
+
+So how come we've got so much on the page?  We have to find where that index variable is coming from and what it is.
+
+To find index we go to application/views where we see two files: main.scala.html and index.scala.html.  Let's first look at main.scala.html.
+
+We can see that the main.scala.html file contains some HTML and has two arguments passed in that are rendered on the page using scala tags.  Where do these arguments come from?  The other view!  So we look at index.scala.html.
+
+Index takes one argument, which corresponds to the index.render() method called in HomeController.index() method.  It then calls the main.scala.html method passing in one string argument and a HTML object called @play.20() and takes a couple of arguments.  It is this @play.20 template that is rendered containing the play documentation.
+
+At last!  We have found the source of the Java documentation, and we can get rid of it.  By simply deleted that line and going back to localhost:9000 we can see that now we have a blank page.
+
+Now we can easily pass in some different HTML.  For example, `<h1>Hello, World!</h1>`, and our setup is complete.
+
+So, that's a little introduction to the Play framework.  I would like to write about something more complicated in the future, but I think I need to learn some more first, but once I have, I will write about it.  Writing about it now, I can't really remember why I had so much trouble with Play in the beginning.  It's one of those things that when you don't know what is going on, it seems incredible convoluted and confusing, but once you see what's happening, it seems obvious.  I hope by writing it here I don't go back to the stage where it all seemed so confusing.

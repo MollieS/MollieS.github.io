@@ -1,0 +1,125 @@
+---
+layout: post
+title: Day sixty
+date: 2016-06-27 16:40:00 +1000
+---
+
+Open Closed Principle
+--------
+
+The Open Closed Principle states that all software entities should be open for extension but closed for modificiation.  We want to ensure that all the software we create is stable in the face of change and will also last longer than the first version.  Software will change, it has to in order to be and remain useful. But how does the OCP help this and what does it really mean?
+
+- Open for extension: we can add new behaviour when it is needed.
+- CLosed for modification: we should not need to change our source code in order to add new behaviour.
+
+This can seem paradoxical.  If we are using the OCP to make sure that our software is easy to change, but we are also trying to design our code so that it should not change, how can we implement new behaviour?
+
+### Abstraction
+--------
+
+If we abstract our code, we have fixed entities that are closed for modification, but the implementations of derived classes can be limitless.  We can implement as much new behaviour as we need without affecting the abstraction.  Our modules become closed because they depend on a fixed abstraction.
+
+### An Example
+--------
+
+We have a pet shop:
+
+```java
+public class PetShop() {
+
+  private Dog dog;
+  private Cat cat;
+
+  public PetShop(Dog dog, Cat cat) {
+    this.dog = dog;
+    this.cat = cat;
+  }
+
+  public List<Integer> setPrices() {
+    List<Integer> prices = new ArrayList();
+    prices.add(calculateCatPrice(cat));
+    prices.add(calculateDogPrice(dog));
+    return prices;
+  }
+
+  public int calculateCatPrice(Cat cat) {
+    int price = 10;
+    if (cat.getCuteness() > 5) {
+      price += 3;
+    } else if (cat.getHealth() < 10) {
+      price - 5;
+    }
+    return price;
+  }
+
+  public int calculateDogPrice(Dog dog) {
+    int price = 20;
+    if (dog.isClever()) {
+      price += 3;
+    } else if (dog.isSmelly()) {
+      price - 2;
+    }
+    return price;
+  }
+}
+```
+
+The pet shop is doing well, especially due to the unique pricing system it utilizes, but it is doing so well that it has the ability to replenish stock and not only buy more cats and dogs, but also it can now afford hamsters.  To represent this in the code, however, would take a lot of effort.  The code above violates the Open Closed Principle because it requires modification to extend.  If we were to abstract away the specifics of different types of pets, then we could add many more pets and many more different types:
+
+```java
+public interface Pet {
+  
+  int cutenessScore();
+  int scentLevel();
+  int iQ();
+  int getHealth();
+  
+}
+```
+
+Now any class that implements Pet will be sure to implement these methods as is specific to the pet itself, and our PetShop can adhere to the OCP:
+
+```java
+
+public class PetShop() {
+
+  private List<Pet> pets;
+
+  public PetShop(List<Pet> pets) {
+    this.pets = pet;
+  }
+
+  public List<Integer> setPrices() {
+    List<Integer> prices = new ArrayList();
+    for (Pet pet : pets) {
+      prices.add(calculatePrice(pet));
+    }
+    return prices;
+  }
+
+  public int calculatePrice(Pet pet) {
+    int price = pet.basePrice();
+    price += pet.cutenessScore();
+    price += pet.iQ();
+    price += pet.scentLevel();
+    price += pet.getHealth();
+    return price;
+  }
+}
+```
+
+### Strategic Closure
+--------
+
+We cannot completely close our code from modification, so we have to be strategic with what we close off and what we leave open.
+
+
+### Encapsulation
+--------
+
+Encapsulation is the idea that all the methods of a class or entity are not closed to changes to the member variables of that class, but every other class should be closed against changes to those variables.  OCP is generally the reason why public variables are considered bad design.  They violate OCP because if a public variable changes, every method that depends on that variable must also be changed, meaning that none of those methods can be fully closed.  It is not, however, always a design decision to have private varibles.  If the publicity of a variable does not affect the design, it should still be made private as a style decision.
+
+In the same way, global variables violate the OCP principle: no entity that depends on a global variable can be closed against any other entity that depends on that variable also.
+
+OCP forms the backbone of maintainable and reusable code.
+

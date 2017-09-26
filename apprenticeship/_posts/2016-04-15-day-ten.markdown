@@ -1,0 +1,15 @@
+---
+layout: post
+title: Day Ten
+date: 2016-04-15 16:40:30 +1000
+---
+
+Considering why my approach to testing my Echo program yesterday was flawed I came to a conclusion.  My focus of the tests were the method ```System.out.println();``` when I did not need to test that method at all.  It's a Java method, I know what it does, I know how it works and if it doesn't act as I expect it to, that's not an issue with my program, it's an issue with Java.  Of course, when I came to this conclusion, my mistake was obvious.  I wasn't testing the expected behaviour of my program, and I should be.
+
+With that in mind I started again, creating a fake console to which I could print and read and test.  But it did not feel right.  I was usng a Console interface so that my fake console and real console could share some behaviour, but within those consoles the methods were doing different things.  One was returning a string, and the other was printing a string to System.out.  I wasn't actually testing the real console at all, and all of my tests would pass regardless of even the existence of a real console.  That did not seem right to me at all.
+
+So I started again.  This time I was pairing with Nick, who, handily, had encountered a similar issue.  I needed to merge my two previous apporaches.  If I could get my test method for output and my real method for output exactly the same and test them, then I would feel much happier about my tests.  So we used only one console, with one output method, and passed in the stream to output to.  So the test method would output to a ByteArrayOutputStream which could be recorded and tested, and the real program could output to System.out.  We did the same for the input method and it worked perfectly.  We could test drive our code, and we could ensure the program was working as expected.  So now I'm feeling happy with how I'm testing my program.
+
+The only problem we really encountered was with using BufferedReader instead of Scanner, because we had both used Scanner previously and we thought we might as well try something new.  It was more difficult to implement, but I certainly learnt something new about exception handling in Java so it was well worth it.
+
+Pair programming is the best.

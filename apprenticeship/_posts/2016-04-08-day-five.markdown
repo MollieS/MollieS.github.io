@@ -1,0 +1,15 @@
+---
+layout: post
+title: Day five
+date: 2016-04-08 15:50:30 +1000
+---
+
+It is the end of my first week at 8th light, and it has been a great week for me.  I've enjoyed pretty much every moment.  The last few run through of Prime Factors have been a bit of a chore, but I'm relatively happy with how I'm doing.  Speed wise, it's not five minutes, but it's under ten, so I have got faster.  I've found myself using shortcuts in other applications more often, and I think, even in this short time, my typing has improved.  I feel infinitly more comfortable with vim, although I've got it into my head that I should use my navigation keys sparingly, and that habit might not actually be the fastest way.  I'll consider this as I go forward, but for the time being, it's working for me.  I'm making less typos, I think.  I still make a few and I hope that I can minimize these.
+
+So Prime Factors is how I spent my morning.  8th Light sets aside Friday afternoons for self lead learning.  I wasn't entirely sure how to spend my Waza time, but when it came around I knew I wanted to stick with Java and ended up doing a few katas that were not Prime Factors.  I found this really beneficial and by the end of the afternoon I felt a little more comfortable with the language.  Next week I think I would like to do more pairing, and Waza time might be good for this.
+
+Throughout this week I've also been reading TDD by example and I've learnt so much already from the book.  I've always tried to test drive my code, but was never really sure if I was doing it right.  TDD by example is a comprehensive handbook for how to test drive, when and how to refactor, what tests to write when and, basically, how to do TDD right.  I'm really enjoying reading it, and feel much more confident in TDD now that I have a clearer idea of what good TDD looks like.  I have also found in the past that I feel the most apprehension in a project, or any code I've written really, when I am faced with a blank screen.  The number of times I've asked myself "Where do I start?" is more than I care to count.  I've always known to start with a test, but Beck gives such great advice on which test to write, I feel that this will really help in the future.
+
+I hope to implement everything I've learnt so far in the next week.  This week has been challenging, and I'm sure next week will be more challenging still, and I just want to make sure that in the face of a problem, I don't panic and disregard all the good habits I've learnt because everything I have learnt is going to help me approach these challenges.
+
+With a weekend for all that I've learnt to settle, I'm really looking forward to next week and my next iteration, and all the challenges it'll bring.
