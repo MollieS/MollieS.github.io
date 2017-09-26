@@ -5,8 +5,6 @@ date: 2017-09-25
 tags: android kotlin
 ---
 
-On Click Listeners are an important part of any Android application.  It's very rare you're going to come across an app that isn't listening for something, anything, to be touched. 
-
 In Java, setting an onClickListener usually follows a familiar Android pattern, anonymous classes.
 
 {% highlight java linenos %}
@@ -78,7 +76,7 @@ class MainActivity : AppCompatActivity() {
 }
 {% endhighlight %}
 
-And we can also use a lamda with an argument:
+And we can also use a lambda with an argument:
 
 {% highlight kotlin linenos %}
 val button = findViewById(R.id.button) as Button
